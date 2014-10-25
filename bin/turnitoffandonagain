@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var log = require('verbalize');
+var argv = require('minimist')(process.argv.slice(2));
+
+console.log('Thanks for trying to turn it on and off again...');
+
+console.log('Time to turn npm off and on again.');
+exec('rm -rf node_modules && npm cache clean && npm install');
+
+console.log('Time to turn bower off and on again.');
+exec('rm -rf bower_components && bower cache clean && bower install');
