@@ -29,6 +29,16 @@ Within your project execute the following in your terminal:
 ```
 turnitoffandonagain
 ```
+
+In attempt to avoid muddying up, or stomping upon, something in your `/bin`, the package has the
+absurdly long name of `turnitoffandonagain`. However, I recommend aliasing it to something shorter
+like:
+
+```
+alias offandon=turnitoffandonagain
+alias helloit=turnitoffandonagain
+```
+
 ## License
 
 MIT
