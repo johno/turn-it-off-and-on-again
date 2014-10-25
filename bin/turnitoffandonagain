@@ -9,7 +9,15 @@ var exec = require('child_process').exec
 console.log('Thanks for trying to turn it on and off again...');
 
 console.log('Time to turn npm off and on again.');
-exec('rm -rf node_modules && npm cache clean && npm install');
+exec('rm -rf node_modules && npm cache clean && npm install', function(err, stdout, stderr) {
+  if (err) throw err;
+  console.log(stdout);
+});
 
 console.log('Time to turn bower off and on again.');
-exec('rm -rf bower_components && bower cache clean && bower install');
+exec('rm -rf bower_components && bower cache clean && bower install', function(err, stdout, stderr) {
+  if (err) throw err;
+  console.log(stdout);
+});
+
+console.log('Both bower and npm are now being turned off and on again, please be patient...');
