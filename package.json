@@ -1,7 +1,7 @@
 {
   "name": "turn-it-off-and-on-again",
   "description": "Turn it off and on again.",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "homepage": "https://github.com/johnotander/turn-it-off-and-on-again",
   "author": {
     "name": "John Otander",
@@ -22,7 +22,10 @@
   ],
   "keywords": [
     "cli",
-    "command line"
+    "command line",
+    "nombom",
+    "nom",
+    "bom"
   ],
   "preferGlobal": true,
   "bin": {

@@ -2,7 +2,7 @@
 
 ![Turn it off and on again](http://media.giphy.com/media/F7yLXA5fJ5sLC/giphy.gif)
 
-This is a quick, ridiculous CLI tool to:
+This is a quick, ridiculous CLI tool to `nombom`:
 
 ```
 rm -rf node_modules
@@ -35,6 +35,7 @@ absurdly long name of `turnitoffandonagain`. However, I recommend aliasing it to
 like:
 
 ```
+alias nombom=turnitoffandonagain
 alias offandon=turnitoffandonagain
 alias helloit=turnitoffandonagain
 ```
