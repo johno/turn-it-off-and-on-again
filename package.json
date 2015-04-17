@@ -41,6 +41,7 @@
     "test": "mocha -R test"
   },
   "dependencies": {
+    "cli-spinner": "^0.2.0",
     "minimist": "~0.0.8",
     "verbalize": "~0.1.1"
   }
