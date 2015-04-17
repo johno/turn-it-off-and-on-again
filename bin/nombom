@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var log = require('verbalize');
+var argv = require('minimist')(process.argv.slice(2));
+var exec = require('child_process').exec
+var Spinner = require('cli-spinner').Spinner;
+
+if (fs.existsSync('package.json')) {
+  var nomSpinner = new Spinner('nom nom nom... %s');
+  nomSpinner.start();
+
+  exec('rm -rf node_modules && npm cache clean && npm install', function(err, stdout, stderr) {
+    if (err) throw err;
+    nomSpinner.stop();
+    process.stdout.write('\n')
+
+    if (argv.log) { console.log(stdout); }
+
+    if (fs.existsSync('bower.json')) {
+      var bomSpinner = new Spinner('bom bom bom... %s');
+      bomSpinner.start();
+
+      exec('rm -rf bower_components && bower cache clean && bower install', function(err, stdout, stderr) {
+        if (err) throw err;
+        bomSpinner.stop();
+        process.stdout.write('\n')
+
+        if (argv.log) { console.log(stdout); }
+
+        console.log('done!');
+      });
+
+    } else {
+      console.log('done!');
+    }
+  });
+}
+
+

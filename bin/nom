@@ -5,9 +5,18 @@ var path = require('path');
 var log = require('verbalize');
 var argv = require('minimist')(process.argv.slice(2));
 var exec = require('child_process').exec
+var Spinner = require('cli-spinner').Spinner;
 
-console.log('Time to turn npm off and on again.');
+var spinner = new Spinner('nom nom nom... %s');
+spinner.start();
+
 exec('rm -rf node_modules && npm cache clean && npm install', function(err, stdout, stderr) {
   if (err) throw err;
-  console.log(stdout);
+  spinner.stop();
+
+  if (argv.log) { 
+    console.log(stdout);
+  } else {
+    console.log('done!');
+  }
 });
