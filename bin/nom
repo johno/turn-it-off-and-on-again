@@ -5,8 +5,14 @@ var path = require('path');
 var log = require('verbalize');
 var argv = require('minimist')(process.argv.slice(2));
 var exec = require('child_process').exec
+var Spinner = require('cli-spinner').Spinner;
 
-exec('rm -rf bower_components && bower cache clean && bower install', function(err, stdout, stderr) {
+var spinner = new Spinner('nom nom nom... %s');
+spinner.start();
+
+exec('rm -rf node_modules && npm cache clean && npm install', function(err, stdout, stderr) {
   if (err) throw err;
+  spinner.stop();
+
   console.log(stdout);
 });

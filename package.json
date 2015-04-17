@@ -1,23 +1,23 @@
 {
   "name": "turn-it-off-and-on-again",
   "description": "Turn it off and on again.",
-  "version": "0.1.1",
-  "homepage": "https://github.com/johnotander/turn-it-off-and-on-again",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pzuraq/nombom",
   "author": {
     "name": "John Otander",
     "url": "http://johnotander.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/johnotander/turn-it-off-and-on-again.git"
+    "url": "git://github.com/pzuraq/nombom.git"
   },
   "bugs": {
-    "url": "https://github.com/johnotander/turn-it-off-and-on-again/issues"
+    "url": "https://github.com/pzuraq/nombom/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/johnotander/turn-it-off-and-on-again/blob/master/LICENSE-MIT"
+      "url": "https://github.com/pzuraq/nombom/blob/master/LICENSE-MIT"
     }
   ],
   "keywords": [
@@ -29,9 +29,9 @@
   ],
   "preferGlobal": true,
   "bin": {
-    "turnnpmoffandonagain": "./bin/turnnpmoffandonagain",
-    "turnboweroffandonagain": "./bin/turnboweroffandonagain",
-    "turnitoffandonagain": "./bin/turnitoffandonagain"
+    "nom": "./bin/nom",
+    "bom": "./bin/bom",
+    "nombom": "./bin/nombom"
   },
   "main": "index.js",
   "engines": {
