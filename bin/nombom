@@ -4,8 +4,16 @@ var fs = require('fs');
 var path = require('path');
 var log = require('verbalize');
 var argv = require('minimist')(process.argv.slice(2));
-var exec = require('child_process').exec
+var spawn = require('child_process').spawn
 
-exec('nom');
+var nom = spawn('nom', [argv.log]);
 
-exec('bom');
+nom.stdout.on('data', function(data) {
+  process.stdout.write(data);
+});
+
+var bom = spawn('bom', [argv.log]);
+
+bom.stdout.on('data', function(data) {
+  process.stdout.write(data);
+});

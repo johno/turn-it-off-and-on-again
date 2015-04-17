@@ -13,6 +13,6 @@ spinner.start();
 exec('rm -rf bower_components && bower cache clean && bower install', function(err, stdout, stderr) {
   if (err) throw err;
   spinner.stop();
-  
-  console.log(stdout);
+
+  if (argv.log) { console.log(stdout); }
 });
