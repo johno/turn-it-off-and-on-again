@@ -1,8 +1,10 @@
-# Turn it off and on again
+# Nombom
 
-![Turn it off and on again](http://media.giphy.com/media/F7yLXA5fJ5sLC/giphy.gif)
+![nomnomnom](http://i.giphy.com/jJJrvIhO0mt9e.gif)
 
-This is a quick, ridiculous CLI tool to `nombom`:
+This is a quick, ridiculous CLI tool to `nombom`.
+
+Credit to @johnotander, forked from [turn-it-off-and-on-again](https://github.com/johnotander/turn-it-off-and-on-again)
 
 ```
 rm -rf node_modules
@@ -27,18 +29,11 @@ npm install -g turn-it-off-and-on-again
 Within your project execute the following in your terminal:
 
 ```
-turnitoffandonagain
+nombom
 ```
 
-In attempt to avoid muddying up, or stomping upon, something in your `/bin`, the package has the
-absurdly long name of `turnitoffandonagain`. However, I recommend aliasing it to something shorter
-like:
-
-```
-alias nombom=turnitoffandonagain
-alias offandon=turnitoffandonagain
-alias helloit=turnitoffandonagain
-```
+You can also execute `nom` or `bom` separately, and pass in the `--log` if you
+want to see the output of the command.
 
 ## License
 

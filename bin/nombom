@@ -25,6 +25,7 @@ if (fs.existsSync('package.json')) {
       exec('rm -rf bower_components && bower cache clean && bower install', function(err, stdout, stderr) {
         if (err) throw err;
         bomSpinner.stop();
+        process.stdout.write('\n')
 
         if (argv.log) { console.log(stdout); }
 
