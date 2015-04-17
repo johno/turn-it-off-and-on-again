@@ -14,5 +14,9 @@ exec('rm -rf node_modules && npm cache clean && npm install', function(err, stdo
   if (err) throw err;
   spinner.stop();
 
-  if(argv.log) { console.log(stdout); }
+  if (argv.log) { 
+    console.log(stdout);
+  } else {
+    console.log('done!');
+  }
 });

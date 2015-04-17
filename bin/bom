@@ -14,5 +14,9 @@ exec('rm -rf bower_components && bower cache clean && bower install', function(e
   if (err) throw err;
   spinner.stop();
 
-  if (argv.log) { console.log(stdout); }
+  if (argv.log) {
+    console.log(stdout);
+  } else {
+    console.log('done!');
+  }
 });
