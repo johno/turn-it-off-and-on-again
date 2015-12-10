@@ -3,7 +3,7 @@
   "description": "Turn npm and bower off and on again (nombom)",
   "version": "0.1.1",
   "author": "John Otander <johnotander@gmail.com> (johnotander.com)",
-  "repository": "",
+  "repository": "johnotander/turn-it-off-and-on-again",
   "license": "MIT",
   "keywords": [
     "cli",
@@ -13,8 +13,8 @@
     "bom"
   ],
   "bin": {
-    "nom": "nom.sh"
-    "bom": "bom.sh"
+    "nom": "nom.sh",
+    "bom": "bom.sh",
     "nombom": "nombom.sh"
   },
   "engines": {
