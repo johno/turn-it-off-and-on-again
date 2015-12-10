@@ -1,8 +1,8 @@
-# Turn it off and on again
+# turn-it-off-and-on-again
 
 ![Turn it off and on again](http://media.giphy.com/media/F7yLXA5fJ5sLC/giphy.gif)
 
-This is a quick, ridiculous CLI tool to `nombom`:
+This is a quick, ridiculous CLI tool to `nombom`.
 
 ```
 rm -rf node_modules
@@ -19,7 +19,7 @@ Because, sometimes you just need to turn it off and on again.
 ## Installation
 
 ```
-npm install -g turn-it-off-and-on-again
+npm i -g turn-it-off-and-on-again
 ```
 
 ## Usage
@@ -27,17 +27,9 @@ npm install -g turn-it-off-and-on-again
 Within your project execute the following in your terminal:
 
 ```
-turnitoffandonagain
-```
-
-In attempt to avoid muddying up, or stomping upon, something in your `/bin`, the package has the
-absurdly long name of `turnitoffandonagain`. However, I recommend aliasing it to something shorter
-like:
-
-```
-alias nombom=turnitoffandonagain
-alias offandon=turnitoffandonagain
-alias helloit=turnitoffandonagain
+$ nombom
+$ nom
+$ bom
 ```
 
 ## License
@@ -52,4 +44,6 @@ MIT
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-Crafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).
+***
+
+> Crafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).
