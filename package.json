@@ -1,7 +1,7 @@
 {
   "name": "turn-it-off-and-on-again",
   "description": "Turn npm and bower off and on again (nombom)",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "author": "John Otander <johnotander@gmail.com> (johnotander.com)",
   "repository": "johnotander/turn-it-off-and-on-again",
   "license": "MIT",
